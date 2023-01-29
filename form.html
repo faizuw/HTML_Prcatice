@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <style>
+        #formstyling{
+            width: 450px;
+            background-color: white;
+            padding: 30px;
+            margin-left: auto ;
+            margin-right: auto;
+        }
+        .label-style{
+            margin-bottom: 8px;
+           
+            margin-top: 14px;
+        }
+        .input-style{
+            width: 100%;
+        }
+    </style>
+</head>
+<body style="background-color: lightblue;">
+
+    <h2 style="text-align: center;font-size: 40px;">SignUp</h2>
+
+    <form id="formstyling" method="get">
+        <p class="label-style">Full Name:</p>
+        
+        
+        
+        <input class="input-style" type="text" name="fullname" placeholder="Enter your Full Name" required autofocus> 
+        
+        <p class="label-style">Email-Id:</p> 
+        
+        <input class="input-style" type="email" name="email" placeholder="name@gmail.com" required>
+
+        <p>Address: </p>
+        <input class="input-style" list="list" required>
+        <datalist id="list">
+            <option value="Delhi">
+                <option value="Mumbai">
+                    <option value="Hydrabad">
+                        <option value="Pune">
+                        <option value="Jammu and Kashmir">
+
+                        <option value="Ladakh">
+
+                        </option>
+                    </option>
+                </option>
+                </option>
+
+        </datalist>
+        <p>Contact No:</p>
+        <input class="input-style" type="number" name="contact" max="10">
+
+        <p>Date of Birth:</p>
+        <input type="date" name="dob" min="1990-01-01" max="2009-12-12" required>
+        <p>Upload Profile Picture:</p>
+
+        
+        <input type="file" name="profile-pic">
+        
+        <p class="label-style">Password: </p>
+        <input class="input-style" type="password" name="password" required maxlength="10">
+        
+        <p class="label-style">Confirm Password:</p> 
+        <input class="input-style" type="password" name="conpassword" required maxlength="10">
+        
+        <p class="label-style">Gender:</p> 
+        <input type="radio" name="male" value="male">Male </input>
+        <input type="radio" name="female" value="female">Female </input>
+        <input type="radio" name="other" value="other">Other </input>
+        
+        <p class="input-style">Security Question:</p>
+        
+      <select name="security-question" >
+        <option value="pet-name">What was your first pet name</option>
+        <option value="school-name">What was your first school name</option>
+        <option value="car-name">What was your first car name</option>        
+      </select>
+      <br>
+      <br>
+      <textarea name="answer" id="" cols="40" rows="4"></textarea>
+      <br> <br>
+      <input type="checkbox" name="terms-condition" value="accept" > I  agree to accept all the terms and conditions 
+
+
+<br><br>
+<input type="reset" name="reset" value="Reset">
+       
+        <input style="margin-left: 25px;" type="submit" value="Register">
+
+    </form>
+</body>
+</html>
